@@ -16,6 +16,7 @@ public class Director extends Company
             con = DriverManager.getConnection(connection,user,password);
             stmt = con.createStatement();
             res = stmt.executeQuery("select * from employee");//query tool
+            System.out.println("№" + " " + "Name" + "  " + "Surname" + "  " + "Position" + "  " + "Salary($)");
             while(res.next())
             {
                 System.out.println(res.getInt("id") + " " + res.getString("name") + " " + res.getString("surname") + " " + res.getString("position") + " " + res.getInt("salary"));
