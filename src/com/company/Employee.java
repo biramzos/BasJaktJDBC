@@ -16,6 +16,7 @@ public class Employee extends Company
             con = DriverManager.getConnection(connection,user,password);
             stmt = con.createStatement();
             res = stmt.executeQuery("select * from data_of_compony");//query tool
+            System.out.println("№" + " " + "ProductName"  + " " + "ProductType" + " " + "Cost($)");
             while(res.next())
             {
                 System.out.println(res.getInt("id") + " " + res.getString("product_name") + " " + res.getString("type_of_product") + " " + res.getInt("product_cost"));
