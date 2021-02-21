@@ -1,2 +1,2 @@
-# BasJaktJDBC
-My practice 5 - company called "BasJaktJDBC".
+# BasJakt
+My practice 5 - company called "BasJakt".
